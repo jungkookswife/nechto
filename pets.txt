@@ -1,0 +1,29 @@
+class Pet:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print("РРР")
+
+class Cat(Pet):
+    def speak(self):
+        return "Мяу"
+
+class Fox(Pet):
+    def speak(self):
+        return "Фыр-фыр"
+
+class Hybrid(Cat, Fox):
+    pass
+
+pet1 = Pet("Питомец")
+pet1.speak()
+
+cat1 = Cat("Кошка")
+print(cat1.speak())
+
+fox1 = Fox("Лиса")
+print(fox1.speak())
+
+hybrid1 = Hybrid("Гибрид")
+print(hybrid1.speak())
