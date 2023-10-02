@@ -3,21 +3,24 @@ class Pet:
         self.name = name
 
     def speak(self):
-        print("РРР")
+        return "РРР" # выводит напрямую в консоль
+         # ?
 
 class Cat(Pet):
     def speak(self):
-        return "Мяу"
+        return "Мяу" # возвращает как результат
+         # ?
 
 class Fox(Pet):
     def speak(self):
-        return "Фыр-фыр"
+        return "Фыр-фыр" # возвращает как результат
+         # ?
 
 class Hybrid(Cat, Fox):
     pass
 
 pet1 = Pet("Питомец")
-pet1.speak()
+print(pet1.speak())
 
 cat1 = Cat("Кошка")
 print(cat1.speak())
@@ -26,4 +29,4 @@ fox1 = Fox("Лиса")
 print(fox1.speak())
 
 hybrid1 = Hybrid("Гибрид")
-print(hybrid1.speak())
+print(hybrid1.speak()) # фыр фыр
